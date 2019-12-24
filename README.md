@@ -26,7 +26,7 @@ We publish CAsTUR in one file, called `CAsTUR.tsv`. As the name suggests, the fi
 
 Below we list the columns of the data and describe them:
 * `current_turn`: the ID of the current turn;
-* `relevant_turn`: the ID of a turn in conversation history that `current_turn` depends on -- it is annotated relevant to `current_turn`. If `current_turn` has no relevant turns, `current_turn` equals to `x`.
+* `relevant_turn`: the ID of a turn in the conversation history that `current_turn` depends on -- it is annotated relevant to `current_turn`. If `current_turn` has no relevant turns, `current_turn` equals to `x`.
 
 Below we can see some example rows of the data, describing the example in the figure above:
 
@@ -37,7 +37,7 @@ current_turn | relevant_turn
 10_3 			| x
 ...				| ...
 
-We see in the example, that the utterance with ID `37_8` has to relevant turns in the conversation, namely, `37_1` and `37_6`. Also, we see that the utterance with ID `10_3` has no relevant turns (`x`), so it is a self-contained utterance.
+We see in the example, that the utterance with ID `37_8` has two relevant turns in the conversation, namely, `37_1` and `37_6`. Also, we see that the utterance with ID `10_3` has no relevant turns (`x`), so it is a self-contained utterance.
 
 
 ## Citation
@@ -45,7 +45,7 @@ We see in the example, that the utterance with ID `37_8` has to relevant turns i
 Please consider citing the following paper if you use CAsTUR in your research:
 
 	@inproceedings{AliannejadiChiir20,
-	    author    = {Aliannejadi, Mohammad and Chakraborty, Manajit and R\`issola, Esteban Andr\`es and Crestani, Fabio},
+	    author    = {Aliannejadi, Mohammad and Chakraborty, Manajit and R\'issola, Esteban Andr\'es and Crestani, Fabio},
 	    title     = {Harnessing Evolution of Multi-Turn Conversations for Effective Answer Retrieval},
 	    booktitle = {Proceedings of 2020 Conference on Human Information Interaction and Retrieval (CHIIR)},
 	    series    = {{CHIIR '20}},
@@ -55,8 +55,8 @@ Please consider citing the following paper if you use CAsTUR in your research:
   	
 ## Acknowledgments
 
-Thanks to Mohammad Aliannejadi, Manajit Chakraborty, Esteban Andrès Rìssola, and Fabio Crestani for their invaluable contributions to this work. Also, we would like to thank the expert annotators who patiently annotated the data.  
+Thanks to Mohammad Aliannejadi, Manajit Chakraborty, Esteban Andrés Ríssola, and Fabio Crestani for their invaluable contributions to this work. Also, we would like to thank the expert annotators who patiently annotated the data.  
   
 ## References
 
-[1] M. Aliannejadi, M. Chakraborty, E. A. Rìssola, and F. Crestani "Harnessing Evolution of Multi-Turn Conversations for Effective Answer Retrieval", In proceedings of 2020 Conference on Human Information Interaction and Retrieval (CHIIR '20), Vancouver, British Columbia, 2020.
+[1] M. Aliannejadi, M. Chakraborty, E. A. Ríssola, and F. Crestani "Harnessing Evolution of Multi-Turn Conversations for Effective Answer Retrieval", In proceedings of 2020 Conference on Human Information Interaction and Retrieval (CHIIR '20), Vancouver, British Columbia, 2020.
